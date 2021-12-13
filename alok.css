@@ -1,0 +1,356 @@
+*
+{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border: horigental;
+    border-bottom: 1px solid #F1F3F4;
+   
+
+}
+.header_left
+{
+  display: flex;
+  align-items: center;
+}
+.header_left img
+{
+    height: 33px;
+    object-fit: contain;
+    margin-left: 8px;
+}
+.header_middle
+{
+    display: flex;
+    justify-content: center;
+    float: 0.7;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    
+
+    
+
+}
+.header_middle input
+{
+    width:580px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-top: -8px;
+}
+
+.header_middle:hover
+{
+    background-color: white;
+    border: 1px solid whitesmoke;
+}
+/*heder for right*/
+
+.header_right
+{
+    display: flex;
+    padding-right: 20px;
+}
+.header_right span{
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/*end headar*/
+/*start main body*/
+
+
+
+
+.sidebar
+{
+    flex: 0.3;
+    max-width: 300px;
+    padding-right: 20px;   
+
+}
+
+.sidebar_compose
+{
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: rgb(92, 84, 84);
+    padding: 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    border:1px solid rgb(230, 225, 225);
+    background-color: #FAFAFB;
+    width: 147px;
+    height: 50px;
+
+}
+.sidebar_compose:hover
+{
+    box-shadow: 0px 7px 15px  black;
+}
+.sidebar_compose span 
+{
+    padding-right: 9px;
+    
+}
+
+.starred
+{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: rgb(85, 77, 77);   
+    height: 32px;
+    width: 242px;
+    margin-top: 3px;
+    cursor: pointer;
+}
+
+
+.starred h3
+{
+    margin-left: 25px;
+    font-size: 17px;
+}
+
+.starred:hover,
+.starred:hover h3,
+.starred:hover .material-icons,
+.sidebaroption__active,
+.sidebaroption__active h3,
+.sidebaroption__active .material-icons
+
+{
+    background-color: #F1F3F4;
+    cursor: pointer;
+}
+
+.sidebaroption
+{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;    
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: rgb(88, 86, 86);   
+    height: 32px;
+    width: 242px;
+    background-color: #FCE8E6;
+    color: #D93025;
+    cursor: pointer;
+   
+
+}
+
+.sidebaroption h3
+{
+    margin-left: 25px;
+    font-size: 17px;
+  
+ 
+    
+}
+
+.in 
+{
+    color: #D93025;
+}
+ a
+{
+    text-decoration: none;
+    color: rgb(128, 124, 124);
+}
+
+.starred span {
+    color: rgb(119, 112, 112);
+}
+
+
+.hori
+{
+   border-bottom: 1px solid #F1F3F4;
+    
+}
+.alok 
+{
+    margin-left: 90px;
+    margin-top: 50px;
+    padding: 3px;
+}
+.alok span {
+    padding: 9px;
+    color: rgb(77, 74, 74);
+}
+
+/*main body*/
+.main__body .material-icons
+{
+    color: rgb(119, 114, 114);
+}
+.main__body 
+{
+    display: flex;
+    height: 100vh;
+    
+    
+}
+body
+{
+    height: 100vh;
+    overflow-y: hidden;
+    
+}
+/*start emaillist*/
+.emaillist
+{
+    flex: 1;
+    overflow: scroll;
+}
+.emillist__settings
+{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #F1F3F4;
+    background-color: white;
+    z-index: 999;
+    padding: 8px;
+
+}
+.emillist__settingsleft
+{
+    display: flex;
+    align-items: center;
+}
+.emillist__settings .material-icons
+{
+    margin: 5px;
+    cursor: pointer;
+}
+/*section starts*/
+.section
+{
+    display: flex;
+    align-items: center;
+    border-bottom-width: 2px;
+    padding: 15px;
+    min-width: 250px;
+    cursor: pointer;
+    color: gray;
+    border-width: 0;
+   
+}
+.emaillist__sections
+{
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 999;
+
+}
+.section__selected
+{
+    background-color: whitesmoke;
+    border-width: 3px;
+    color: red;
+    border-bottom: 3px solid red;
+}
+.section__selected .material-icons
+{
+    color: red;
+
+}
+.section:hover
+{
+    background-color: whitesmoke;
+    border-width: 3px;
+}
+.section h4
+{
+    font-size: 15px;
+    margin-left: 15px;
+   
+}
+
+.emailrow__options
+{
+    display: flex;
+    align-items: center;
+}
+.emailrow__options .material-icons, input
+{
+    margin: 5px;
+}
+.emailrow 
+{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid whitesmoke;
+    cursor: pointer;
+    z-index: 999;
+}
+.emailrow:hover
+{
+    border-top: 1px solid whitesmoke;
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,0.24);
+}
+.emailrow__message
+{
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    font-size: 16px;
+    margin-left: 89px;
+}
+.emailrow__message h4
+{
+    width: 400px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.emailrow__title
+{
+    padding-right: 15px;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+.emailrow__description
+{
+    font-weight: 400px;
+    color: gray;
+}
+.emailrow__time
+{
+    font-size: 12px;
+    font-weight: bold;
+    color: gray;
+    margin-right: -94px;
+}
+    
